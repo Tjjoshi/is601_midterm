@@ -13,6 +13,6 @@ class UpdateUserTest extends TestCase
         $user->name = 'Steve Smith';
         $user->save();
         $this->assertDatabaseHas('users', ["name" => "Steve Smith"]);
-        
+
     }
 }
